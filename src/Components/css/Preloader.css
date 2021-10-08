@@ -1,0 +1,109 @@
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 1;
+    visibility: visible !important;
+    z-index: 999999999 !important;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.preloader .main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader .main-content .preloader-img img{
+    width: 50vw;
+    mix-blend-mode: darken;
+}
+
+.preloader-text {
+    height: 8vh;
+}
+
+.preloader .spidy-octocat{
+    position: absolute;
+    top: -20vw;
+    left: 0%;
+    height: 18vw;
+    overflow: hidden;
+    animation: spidy 8s 1 forwards;
+    animation-delay: 7s;
+}
+.preloader .spidy-octocat img{
+    width: 20vw;
+}
+
+@keyframes spidy {
+    0%{
+        top: -20vw;
+    }
+    10%{
+        top: -12vw;
+    }
+    20%{
+        top: -12vw;
+    }
+    30%{
+        top: -12vw;
+    }
+    40%{
+        top: 0px;
+    }
+    50%{
+        top: -20vw;
+    }
+    100%{
+        top: -20vw;
+    }
+}
+
+
+
+.preloader .FilmToCat{
+    position: absolute;
+    bottom: 0;
+    right: -20vw;
+    overflow: hidden;
+    box-shadow: 0;
+    animation: FilmToCat 5s 1 forwards;
+    animation-delay: 1.5s;
+}
+.preloader .FilmToCat img{
+    width: 20vw;
+}
+
+
+@keyframes FilmToCat {
+    0%{
+        right: -20vw;
+    }
+    40%{
+        right: 0vw;
+    }
+    60%{
+        right: -20vw;
+    }
+    100%{
+        right: -20vw;
+    }
+}
+
+@media only screen and (max-width: 756px) {
+    .preloader .FilmToCat{
+        bottom: 8vh;
+    }
+
+}

@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.nav {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  line-height: 65px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 99;
+}
+
+#nav {
+  transform: scale(1.1);
+}
+.nav div.logo {
+  width: auto;
+  height: 74px;
+  font-size: 10px;
+  position: absolute;
+  left: 5%;
+}
+
+.nav div.logo a {
+  text-decoration: none;
+  color: #d61e3c;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Lobster", cursive;
+}
+
+.nav div.main_list {
+  float: right;
+}
+
+.nav div.main_list ul {
+  display: flex;
+  list-style: none;
+  padding: 0 !important;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.nav div.main_list ul a {
+  width: auto;
+  height: 60px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 65px;
+  text-transform: uppercase;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 4px 21px;
+  margin-top: 2px;
+}
+
+.nav div.main_list ul a:hover,
+.nav div.main_list ul a:hover,
+.nav div.main_list ul a:hover,
+.nav div.main_list ul a:hover,
+.nav div.main_list ul a:hover {
+  color: #d61e3c;
+}
+
+.nav div.media_button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  display: none;
+}
+
+.nav div.media_button button.main_media_button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span {
+  width: 98%;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+
+@keyframes rotate1 {
+  0% {
+    transition: all Y(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+  }
+}
+@keyframes rotate2 {
+  100% {
+    transition: all Y(0deg);
+  }
+  0% {
+    transform: rotateY(-180deg);
+    transition: all 0.3s;
+  }
+}
+
+.is-active {
+  background-color: #d61e3c;
+}
+.is-active:hover {
+  background-color: #ad1831;
+  color: white !important;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+  transform: rotate3d(0, 0, 1, 45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+  display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+  transform: rotate3d(0, 0, 1, -45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+  transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+  transform: rotate3d(0, 0, 1, -20deg);
+}
+
+
+.user{
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  transition: all 0.0s !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d61e3c;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown .dropdown-content a:hover{color: white !important;}                                                                        
+
+.dropdown:hover .dropdown-content a:hover {background-color: #c00020;cursor: pointer;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn  {background-color: #c00020 !important;}
+
+@media screen and (max-width: 768px) {
+  #nav {
+    transform: scale(1);
+  }
+
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .nav div.main_list {
+    width: 100%;
+    height: 0;
+    margin-top: 65px;
+    overflow: hidden;
+  }
+
+  .nav div.show_list {
+    height: 200px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+  .nav div.main_list ul {
+    flex-direction: column;
+    width: 100%;
+    height: 75vh;
+    top: 80px;
+    right: 0;
+    left: 0;
+  }
+
+  .nav div.main_list ul a {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: auto;
+    display: table;
+  }
+
+  .nav div.media_button {
+    display: block;
+  }
+
+  .nav div.logo a {
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding-right: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  scroll-behavior: smooth;
+  /* cursor: url('./Components/img/cursor/cursor1.png') 40 10,auto; */
+  overflow: hidden;
+}
+#recaptcha > div {
+  margin: 0 auto 0.5em;
+}
+/* .cursor2{
+  cursor: url('./Components/img/cursor/cursor2.png') 40 0,auto !important;
+}
+.cursor-send{
+  cursor: url('./Components/img/cursor/send.png') 40 10,auto !important;
+}
+.cursor-text{
+  cursor: url('./Components/img/cursor/text.png') 4 50,auto !important;
+}
+.cursor-email{
+  cursor: url('./Components/img/cursor/email.png') 4 50,auto !important;
+}
+.cursor-name{
+  cursor: url('./Components/img/cursor/name.png') 4 50,auto !important;
+}
+.cursor-phone{
+  cursor: url('./Components/img/cursor/phone.png') 4 50,auto !important;
+}
+.cursor-touch{
+  cursor: url('./Components/img/cursor/touch.png') 40 15,auto !important;
+}
+.cursor-zoom{
+  cursor: url('./Components/img/cursor/zoom.png') 40 15,auto !important;
+}
+.cursor-read{
+  cursor: url('./Components/img/cursor/read.png') 40 15,auto !important;
+}
+.cursor-check{
+  cursor: url('./Components/img/cursor/check.png') 40 15,auto !important;
+}
+.cursor-dream{
+  cursor: url('./Components/img/cursor/dream.png') 40 10,auto !important;
+}
+.cursor-breathing{
+  cursor: url('./Components/img/cursor/breathing.png') 40 10,auto !important;
+}
+.cursor-creativity{
+  cursor: url('./Components/img/cursor/creativity.png') 40 10,auto !important;
+}
+.cursor-surprised{
+  cursor: url('./Components/img/cursor/surprised.png') 40 10,auto !important;
+}
+.cursor-home{
+  cursor: url('./Components/img/cursor/home.png') 40 10,auto !important;
+}
+.cursor-confused{
+  cursor: url('./Components/img/cursor/confused.png') 40 10,auto !important;
+} */
+.cursor-hello {
+  cursor: url("./Components/img/cursor/hello.png"), auto !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.z-10 {
+  z-index: 10;
+  position: relative;
+}
+.z-9 {
+  position: relative;
+  z-index: 9;
+}
+
+::selection {
+  text-shadow: none;
+  background: #d61e3c;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* cursor: url('./Components/img/cursor/scrolling.png') 40 10,auto !important; */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  background-color: crimson;
+}

@@ -1,0 +1,309 @@
+footer {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10vh;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+svg {
+  height: 100%;
+}
+#Girl {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  transform-box: fill-box;
+  float: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(9deg);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
+
+#Vector_38 {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center 0px;
+  transform-box: fill-box;
+  float: left;
+}
+
+#Vector_39 {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center 0px;
+  transform-box: fill-box;
+  float: left;
+}
+
+#Vector_40 {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  transform-box: fill-box;
+  float: left;
+}
+
+.mauto {
+  margin: auto;
+}
+.bg-svg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+}
+
+#Leaf1 {
+  -webkit-animation: shake-bottom 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+
+#leaf11 {
+  -webkit-animation: shake-bottom 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+
+#leaf10 {
+  -webkit-animation: shake-bottom 3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+
+#leaf12 {
+  -webkit-animation: shake-bottom 9s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 9s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+
+#leaf13 {
+  -webkit-animation: shake-bottom 8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+
+#lef14 {
+  -webkit-animation: shake-bottom 7.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 7.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+
+#leaf15 {
+  -webkit-animation: shake-bottom 7s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+
+#leaf16 {
+  -webkit-animation: shake-bottom 6.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 6.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+
+#leaf17 {
+  -webkit-animation: shake-bottom 6s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 6s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+@keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  margin: 5px;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.social-icons a:hover {
+  background-color: #e21212;
+  animation: icon-spin 1s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes icon-spin {
+  from{
+  transform: rotate(360deg);
+  }
+  to{
+  transform: rotate(0deg);
+  }
+}
+
+hr {
+  margin-top: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 0;
+  background-color: #31303e;
+  opacity: 0.8;
+}
+
+.PriTerm{
+  width: 284px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.PriTerm a{
+  text-decoration: none;
+  color: rgb(125, 18, 35);
+}
+
+footer .container .PriTerm .Privacy:hover{
+  color: whitesmoke;
+  background-color: rgb(125, 18, 35);
+}
+
+footer .container .PriTerm .Terms:hover {
+  color: whitesmoke;
+  background-color: rgb(125, 18, 35);
+}
+@media only screen and (max-width: 576px) {
+  .footer-svg {
+    padding-top: 10vh;
+  }
+  footer {
+    min-height: 320px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .container {
+    text-align: center;
+  }
+  .PriTerm{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .footer-svg {
+    padding-top: 0vh;
+  }
+  main .contact-bg:after {
+    height: 700px;
+}
+
+}
+@media only screen and (max-width: 1030px) {
+  footer {
+    min-height: 30vh;
+  }
+  .bg-svg svg {
+    height: 50vh;
+  }
+}
