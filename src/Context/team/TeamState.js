@@ -199,6 +199,7 @@ const TeamState = (props) => {
           portfolio: "Portfolio",
           email: "Email",
           campus_profile: "Campus profile",
+          github: "GitHub",
           linkedin: "Linkedin",
           facebook: "Facebook",
           instagram: "Instagram",

@@ -140,6 +140,19 @@ export default function Team() {
                         ""
                       )}
 
+                      {Team.github ? (
+                        <a
+                          href={Team.github}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="cursor2"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                      ) : (
+                        ""
+                      )}
+
                       {Team.twitter ? (
                         <a
                           href={Team.twitter}

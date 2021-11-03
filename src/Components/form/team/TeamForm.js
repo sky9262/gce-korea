@@ -247,6 +247,20 @@ function TeamForm() {
             />
           </div>
         </div>
+        {/* github */}
+        <div className="form-input-max">
+          <div className="form-input-wrapper flexbox-left">
+           <i class="fab fa-github"></i>
+            <input
+              className="form-input cursor-email"
+              id="github"
+              name="github"
+              type="text"
+              placeholder="GitHub"
+              aria-label=""
+            />
+          </div>
+        </div>
         {/* linkedin */}
         <div className="form-input-max">
           <div className="form-input-wrapper flexbox-left">
