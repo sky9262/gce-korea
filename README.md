@@ -13,6 +13,12 @@ I hope you'll like it.
 
 ## 💡 How to run
 
+### 0. Clone the repo
+```bash
+git clone https://github.com/sky9262/gce-korea
+cd gce-korea
+```
+
 ### 1. Install all dependencies
 ```bash
 npm i
