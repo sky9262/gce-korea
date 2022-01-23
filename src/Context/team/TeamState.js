@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import loadingImg from "../auth/img/random/swal/loading/octocatLoading.gif";
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
+require('dotenv').config()
 
 const TeamState = (props) => {
   const Toast = Swal.mixin({

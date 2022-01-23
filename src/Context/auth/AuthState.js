@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import { useCookies } from 'react-cookie';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
+require('dotenv').config()
 
 
 function importAll(r) {

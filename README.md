@@ -13,19 +13,45 @@ I hope you'll like it.
 
 ## 💡 How to run
 
-- Install all dependencies
+### 1. Install all dependencies
 ```bash
 npm i
 ```
 
-- Run the React App
+### 2. Run the React App
 ```bash
 npm start
 ```
 
 ## 🔌 How to deploy to Github Pages
 
-- Just deploy
+### 1. Add homepage to `package.json` file
+```diff
+{
+  "name": "gce-korea",
+  "version": "0.1.0",
++ "homepage": "https://<username>.github.io/<repo name>",
+  "private": true,
+```
+In my case:
+```diff
+{
+  "name": "gce-korea",
+  "version": "0.1.0",
++ "homepage": "https://sky9262.github.io/gce-korea",
+  "private": true,
+```
+
+### 2. Add a "remote" to the local Git repository
+```bash
+git remote add origin https://github.com/{username}/{repo-name}.git
+```
+In my case:
+```bash
+git remote add origin https://github.com/sky9262/gce-korea.git
+```
+
+### 3. Now deploy
 ```bash
 npm deploy
 ```

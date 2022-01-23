@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import loadingImg from "../auth/img/random/swal/loading/d5a2b01b8294bfb8678d67342b106795.gif";
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
+require('dotenv').config()
 
 const PostState = (props) => {
   const Toast = Swal.mixin({
