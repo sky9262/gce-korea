@@ -11,20 +11,37 @@ I created it during learning React.
 
 I hope you'll like it.
 
+## 📝 Prerequisites
+- node
+```bash
+node -v
+v12.22.5
+```
+- npm
+```bash
+npm -v
+7.5.2
+```
+- git
+```bash
+git --version
+git version 2.30.2
+```
+
 ## 💡 How to run
 
-### 0. Clone the repo
+### 1. Clone the repo
 ```bash
 git clone https://github.com/sky9262/gce-korea
 cd gce-korea
 ```
 
-### 1. Install all dependencies
+### 2. Install all dependencies
 ```bash
 npm i
 ```
 
-### 2. Run the React App
+### 3. Run the React App
 ```bash
 npm start
 ```
