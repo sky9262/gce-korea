@@ -2,6 +2,8 @@ import postContext from "./postContext";
 import { useState } from "react";
 import Swal from "sweetalert2";
 import loadingImg from "../auth/img/random/swal/loading/d5a2b01b8294bfb8678d67342b106795.gif";
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
 const PostState = (props) => {
   const Toast = Swal.mixin({
@@ -68,9 +70,8 @@ const PostState = (props) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NWEwYjUyNGEyOTI0YmFjYmU5ODhlIn0sImlhdCI6MTYzMzAwMjU0MH0.ahmLdVRvhNWqQkpjRVCmd0ME1JP_gm42fYwwBB1sfRU",
-      },
+        "auth-token": cookies.get("GCE_KR_TOKEN"),
+        },
       body: body,
     }).catch(() => {
       Swal.close();
@@ -143,9 +144,8 @@ const PostState = (props) => {
               method: "DELETE",
               headers: {
                 "Content-Type": "application/json",
-                "auth-token":
-                  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NWEwYjUyNGEyOTI0YmFjYmU5ODhlIn0sImlhdCI6MTYzMzAwMjU0MH0.ahmLdVRvhNWqQkpjRVCmd0ME1JP_gm42fYwwBB1sfRU",
-              },
+                "auth-token": cookies.get("GCE_KR_TOKEN")
+                },
             }
           ).catch(() => {
             Swal.close();
@@ -271,9 +271,8 @@ const PostState = (props) => {
                   method: "PUT",
                   headers: {
                     "Content-Type": "application/json",
-                    "auth-token":
-                      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NWEwYjUyNGEyOTI0YmFjYmU5ODhlIn0sImlhdCI6MTYzMzAwMjU0MH0.ahmLdVRvhNWqQkpjRVCmd0ME1JP_gm42fYwwBB1sfRU",
-                  },
+                    "auth-token": cookies.get("GCE_KR_TOKEN")
+                    },
                   body: `{"${selected}": "${e.target.result}"}`,
                 }
               ).catch(() => {
@@ -326,8 +325,7 @@ const PostState = (props) => {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
-              "auth-token":
-                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NWEwYjUyNGEyOTI0YmFjYmU5ODhlIn0sImlhdCI6MTYzMzAwMjU0MH0.ahmLdVRvhNWqQkpjRVCmd0ME1JP_gm42fYwwBB1sfRU",
+              "auth-token": cookies.get("GCE_KR_TOKEN"),
             },
             body: `{"${selected}": "${zoom}"}`,
           }
@@ -372,8 +370,7 @@ const PostState = (props) => {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
-              "auth-token":
-                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NWEwYjUyNGEyOTI0YmFjYmU5ODhlIn0sImlhdCI6MTYzMzAwMjU0MH0.ahmLdVRvhNWqQkpjRVCmd0ME1JP_gm42fYwwBB1sfRU",
+              "auth-token": cookies.get("GCE_KR_TOKEN"),
             },
             body: `{"${selected}": "${answer}"}`,
           }

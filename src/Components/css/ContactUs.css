@@ -1,6 +1,6 @@
 #Contact {
   height: 115vh;
-  margin-bottom: 60vh;
+  margin-bottom: 80vh;
 }
 .contact-bg {
   height: 96vh;
@@ -16,7 +16,7 @@
   display: inline-block;
   background-image: url("../img/map-image.png");
   position: relative;
-  height: 140vh;
+  height: 170vh;
   width: 100%;
   background-color: #222;
   /* top: -150vh; */
@@ -293,7 +293,7 @@ textarea::-webkit-scrollbar-thumb {
     height: 980px;
   }
   #Contact{
-    margin-bottom: 650px;
+    margin-bottom: 130vh;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -301,6 +301,6 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 1.75rem;
   }
   #Contact {
-    margin-bottom: 700px;
+    margin-bottom: 135vh;
 }
 }

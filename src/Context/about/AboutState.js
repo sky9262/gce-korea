@@ -2,6 +2,8 @@ import aboutContext from "./aboutContext";
 import { useState } from "react";
 import Swal from "sweetalert2";
 import loadingImg from "../auth/img/random/swal/loading/713a3272124cc57ba9e9fb7f59e9ab3b.gif";
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
 const AboutState = (props) => {
   const Toast = Swal.mixin({
@@ -72,7 +74,7 @@ const AboutState = (props) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "auth-token": localStorage.getItem("GCE-KR_TOKEN"),
+        "auth-token": cookies.get("GCE-KR_TOKEN"),
       },
       body: body,
     }).catch(() => {
@@ -157,7 +159,7 @@ const AboutState = (props) => {
               method: "DELETE",
               headers: {
                 "Content-Type": "application/json",
-                "auth-token": localStorage.getItem("GCE-KR_TOKEN"),
+                "auth-token": cookies.get("GCE-KR_TOKEN"),
               },
             }
           ).catch(() => {
@@ -272,7 +274,7 @@ const AboutState = (props) => {
                   method: "PUT",
                   headers: {
                     "Content-Type": "application/json",
-                    "auth-token": localStorage.getItem("GCE-KR_TOKEN"),
+                    "auth-token": cookies.get("GCE-KR_TOKEN"),
                   },
                   body: `{"${selected}": "${e.target.result}"}`,
                 }
@@ -326,7 +328,7 @@ const AboutState = (props) => {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
-              "auth-token": localStorage.getItem("GCE-KR_TOKEN"),
+              "auth-token": cookies.get("GCE-KR_TOKEN"),
             },
             body: `{"${selected}": "${answer}"}`,
           }

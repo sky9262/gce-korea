@@ -17,11 +17,10 @@ export default class Footer extends Component {
       <footer id="site-footer">
         <div className="footer-svg">
           <div className="container nav_container mt-5">
-            <div className="col-md-offset-3 col-sm-10 col-md-8 text-center mauto">
+            <div className="col-md-offset-3 col-sm-10 col-md-8 text-center">
               <div className="bg-svg">
                 <svg
-                  width="100%"
-                  height="50vw"
+                  width="300px"
                   viewBox="0 0 1006 830"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
