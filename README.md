@@ -51,7 +51,16 @@ In my case:
 git remote add origin https://github.com/sky9262/gce-korea.git
 ```
 
-### 3. Now deploy
+### 3. Add environment variable / secrets [(How to add)](https://stackoverflow.com/questions/57685065/how-to-set-secrets-in-github-actions#:~:text=left%20hand%20menu-,Add%20a%20new%20secret,-and%20provide%20a)
+Add api url as a environment variable named `REACT_APP_API`
+
+In my case,
+```
+REACT_APP_API = <The api url>
+```
+Note: Don't add `/` at the end of the api url.
+
+### 4. Now deploy
 ```bash
 npm deploy
 ```
