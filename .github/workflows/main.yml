@@ -35,6 +35,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Deploy
+        uses: sky9262/gce-korea@releases/v2
         with:
           GITHUB_TOKEN: ${{ secrets.REACT_APP_API }}
           BRANCH: gh-pages
