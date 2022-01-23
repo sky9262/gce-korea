@@ -1,6 +1,6 @@
 {
   "name": "gce-korea",
-  "homepage": "./",
+  "homepage": "https://github.com/sky9262/gce-korea",
   "version": "0.2.0",
   "private": true,
   "dependencies": {
